@@ -3,13 +3,12 @@ MSCI 641: Text Analytics
 
 Classification accuracy:
 
-Condition		        Text features		    Accuracy (test set)
-Without Stopwords	  unigrams		        0.8080
-Without Stopwords	  bigrams			        0.7911
-Without Stopwords	  unigrams+bigrams	  0.8264
-With Stopwords		  unigrams		        0.8096
-With Stopwords		  bigrams			        0.8213
-With Stopwords		  unigrams+bigrams	  0.8320
+Without Stopwords (unigrams), Accuracy: 0.8080
+Without Stopwords (bigrams), Accuracy: 0.7911
+Without Stopwords	(unigrams+bigrams), Accuracy: 0.8264
+With Stopwords (unigrams), Accuracy: 0.8096
+With Stopwords (bigrams), Accuracy: 0.8213
+With Stopwords (unigrams+bigrams), Accuracy: 0.8320
 
 a. Which condition performed better: with or without stopwords? Write a briefparagraph (5-6 sentences) discussing why you think there is a difference in performance.
 
