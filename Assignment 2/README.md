@@ -3,12 +3,13 @@ MSCI 641: Text Analytics
 
 Classification accuracy:
 
-Without Stopwords (unigrams), Accuracy: 0.8080 \
-Without Stopwords (bigrams), Accuracy: 0.7911 \
-Without Stopwords	(unigrams+bigrams), Accuracy: 0.8264 \
-With Stopwords (unigrams), Accuracy: 0.8096 \
-With Stopwords (bigrams), Accuracy: 0.8213 \
-With Stopwords (unigrams+bigrams), Accuracy: 0.8320 \
+Condition		Text features		Accuracy (test set) \
+Without Stopwords &nbsp; unigrams &nbsp; 0.8080 \
+Without Stopwords &nbsp; bigrams &nbsp; 0.7911 \
+Without Stopwords &nbsp; unigrams+bigrams &nbsp; 0.8264 \
+With Stopwords &nbsp; unigrams &nbsp; 0.8096 \
+With Stopwords &nbsp; bigrams &nbsp; 0.8213 \
+With Stopwords &nbsp; unigrams+bigrams &nbsp; 0.8320
 
 a. Which condition performed better: with or without stopwords? Write a briefparagraph (5-6 sentences) discussing why you think there is a difference in performance.
 
@@ -17,3 +18,4 @@ Answer: In this model, classfier with stopwords performed better than the one wi
 b. Which condition performed better: unigrams, bigrams or unigrams+bigrams? Briefly (in 5-6 sentences) discuss why you think there is a difference?
 
 Answer: In this model, "unigrams+bigrams" performed better than the "unigrams" and "bigrams" conditions, because it captures multi-word expressions and considers word order dependence. Additionally, the bag of words model doesn’t account for potential misspellings or word derivations. In the review, "My daughter did not admire the shampoo", the "unigrams+bigrams" probability to predict the word based on its predecessor(s) is higher than the probability to predict a single word without a predecssor(s). The "unigrams+bigrams" combination captures phrases and increases the vocabulary of our grams. The features related to a specific review have more frequency than the individual unigrams and bigrams, resulting in improved classification and higher accuracy.
+
