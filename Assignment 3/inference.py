@@ -4,8 +4,6 @@
 import os
 import sys
 import random
-from random import shuffle
-from random import sample
 from gensim.models import Word2Vec
 
 def main(data_path):
