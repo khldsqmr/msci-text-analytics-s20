@@ -1,6 +1,3 @@
-#IMPORT and READ the text files
-
-#text = open(sys.argv[1])
 import os
 import sys
 import random
