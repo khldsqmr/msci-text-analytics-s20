@@ -5,9 +5,9 @@ Report your classification accuracy results in a table with three different acti
 <table>
 <thead><tr><th>Activation Function</th><th>Train Accuracy</th><th>Test Accuracy</th><th>Train Accuracy</th><th>Test Accuracy</th></tr></thead><tbody>
  <tr><td>&nbsp;</td><td>(With L2-Regularizer)</td><td>(With L2-Regularizer)</td><td>(Without L2-Regularizer)</td><td>(Without L2-Regularizer)</td></tr>
- <tr><td><b>ReLU</b></td><td>81.66%</td><td>80.71%</td><td>&nbsp;</td><td>&nbsp;</td></tr>
- <tr><td><b>Sigmoid</b></td><td>81.27%</td><td>80.74%</td><td>&nbsp;</td><td>&nbsp;</td></tr>
- <tr><td><b>Tanh</b></td><td>81.84%</td><td>80.54%</td><td>&nbsp;</td><td></td></tr>
+ <tr><td><b>ReLU</b></td><td>81.66%</td><td>80.71%</td><td>85.84%</td><td>81.42%</td></tr>
+ <tr><td><b>Sigmoid</b></td><td>81.27%</td><td>80.74%</td><td>86.03%</td><td>81.66%</td></tr>
+ <tr><td><b>Tanh</b></td><td>81.84%</td><td>80.54%</td><td>84.35%</td><td>81.15%</td></tr>
 </tbody></table>
 
 
