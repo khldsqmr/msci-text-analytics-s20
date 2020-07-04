@@ -1,48 +1,32 @@
 Report your classification accuracy results in a table with three different activation functions in the hidden layer(ReLU, sigmoid and tanh). What effect do activation functions have on your results? What effect does addition of L2-norm regularization have on the results? What effect does dropout have on the results?
 
-simple model with binary cateforical values
-our model is simple 
-Help reduce overfitting
-add penalty to network 
+Based on the above table, our model performs well with Sigmoid activation functions. Although ReLU and Tanh also provide non-linear activation functions and perform well on sparse variables, Sigmoid function works well with simple model having binary categorical values. In our case, we have to predict reviews based on binary categorical variable y, where 0 represents negative review and 1 represents positive review. 
 
-It randomly chooses some weights to drop them out. It doesn't become accustomed to neighbouring neurons for learning. There is less dependency and learn by itself. Pairing not always togerther. perform well when encountering new data. And try to performs well without overfitting
+L2-norm regularization helps in reducing overfitting of the model on the training data. Basically its a penalty parameter/regulator which optimzies the weights in the neural network. As we observe in our model, train and test accuracies with L2-norm regularization is less than that of without L2-norm regularization, but there's a large difference between train and test accuracies in the model without L2-norm regularization. Thus, it can be inferred that the model performs well on the training data, but not on the test data. On the contrary, there's not much difference between train and test accuracies in the model with L2-norm regularization, and thus, the model performs comparatively well on the test data.  
 
-Activation functions:
-
-ReLU, Accuracy = 
-Sigmoid, Accuracy = 80.74%
-Tanh, Accuracy = 
-
-Using different non-linear activation functions (ReLU, Sigmoid and tanh), we observe 
-
-  <table>
-    <thead>
-      <tr>
-        <th>Activation</th>
-	<th>Accuracy</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>ReLU</td>
-            <td>80.71%</td>
-        </tr>
-        <tr>
-            <td>Sigmoid</td>
-            <td>80.75%</td>
-        </tr>
-	<tr>
-            <td>Tanh</td>
-            <td>80.54%</td>
-        </tr>
-    </tbody>
-  </table>
+Dropout layer randomly chooses some weights to drop them out. Thus, the neurons dont become accustomed to the neighbouring neurons for learning. There is less dependency between subsequent neurons and they learn by themselves to combat the cases where the pairing is not always together. Thus, the neurons perform well when they encounter new data and thus, the model performs well without overfitting.
 
 
-<table>
-<thead><tr><th>Activation Function</th><th>Accuracy</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th></tr></thead><tbody>
- <tr><td>&nbsp;</td><td>With L2-Regularizer</td><td>&nbsp;</td><td>Without L2-Regularizer</td><td>&nbsp;</td></tr>
- <tr><td>&nbsp;</td><td>Train </td><td>Test</td><td>Train</td><td>Test</td></tr>
+<style type="text/css">
+	table.tableizer-table {
+		font-size: 12px;
+		border: 1px solid #CCC; 
+		font-family: Arial, Helvetica, sans-serif;
+	} 
+	.tableizer-table td {
+		padding: 4px;
+		margin: 3px;
+		border: 1px solid #CCC;
+	}
+	.tableizer-table th {
+		background-color: #104E8B; 
+		color: #FFF;
+		font-weight: bold;
+	}
+</style>
+<table class="tableizer-table">
+<thead><tr class="tableizer-firstrow"><th>Activation Function</th><th>Train Accuracy</th><th>Test Accuracy</th><th>Train Accuracy</th><th>Test Accuracy</th></tr></thead><tbody>
+ <tr><td>&nbsp;</td><td>(With L2-Regularizer)</td><td>(With L2-Regularizer)</td><td>(Without L2-Regularizer)</td><td>(Without L2-Regularizer)</td></tr>
  <tr><td>ReLU</td><td>81.66%</td><td>80.71%</td><td>&nbsp;</td><td>&nbsp;</td></tr>
  <tr><td>Sigmoid</td><td>81.27%</td><td>80.74%</td><td>&nbsp;</td><td>&nbsp;</td></tr>
  <tr><td>Tanh</td><td>81.84%</td><td>80.54%</td><td>&nbsp;</td><td></td></tr>
