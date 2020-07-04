@@ -7,27 +7,10 @@ L2-norm regularization helps in reducing overfitting of the model on the trainin
 Dropout layer randomly chooses some weights to drop them out. Thus, the neurons dont become accustomed to the neighbouring neurons for learning. There is less dependency between subsequent neurons and they learn by themselves to combat the cases where the pairing is not always together. Thus, the neurons perform well when they encounter new data and thus, the model performs well without overfitting.
 
 
-<style type="text/css">
-	table.tableizer-table {
-		font-size: 12px;
-		border: 1px solid #CCC; 
-		font-family: Arial, Helvetica, sans-serif;
-	} 
-	.tableizer-table td {
-		padding: 4px;
-		margin: 3px;
-		border: 1px solid #CCC;
-	}
-	.tableizer-table th {
-		background-color: #104E8B; 
-		color: #FFF;
-		font-weight: bold;
-	}
-</style>
-<table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th>Activation Function</th><th>Train Accuracy</th><th>Test Accuracy</th><th>Train Accuracy</th><th>Test Accuracy</th></tr></thead><tbody>
+<table>
+<thead><tr><th>Activation Function</th><th>Train Accuracy</th><th>Test Accuracy</th><th>Train Accuracy</th><th>Test Accuracy</th></tr></thead><tbody>
  <tr><td>&nbsp;</td><td>(With L2-Regularizer)</td><td>(With L2-Regularizer)</td><td>(Without L2-Regularizer)</td><td>(Without L2-Regularizer)</td></tr>
- <tr><td>ReLU</td><td>81.66%</td><td>80.71%</td><td>&nbsp;</td><td>&nbsp;</td></tr>
- <tr><td>Sigmoid</td><td>81.27%</td><td>80.74%</td><td>&nbsp;</td><td>&nbsp;</td></tr>
- <tr><td>Tanh</td><td>81.84%</td><td>80.54%</td><td>&nbsp;</td><td></td></tr>
+ <tr><td><th>ReLU</th></td><td>81.66%</td><td>80.71%</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td><th>Sigmoid</th></td><td>81.27%</td><td>80.74%</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td><th>Tanh</th></td><td>81.84%</td><td>80.54%</td><td>&nbsp;</td><td></td></tr>
 </tbody></table>
