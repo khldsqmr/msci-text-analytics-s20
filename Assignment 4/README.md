@@ -1,5 +1,6 @@
 Report your classification accuracy results in a table with three different activation functions in the hidden layer(ReLU, sigmoid and tanh). What effect do activation functions have on your results? What effect does addition of L2-norm regularization have on the results? What effect does dropout have on the results?
----------------------------------------------------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 <table>
 <thead><tr><th>Activation Function</th><th>Train Accuracy</th><th>Test Accuracy</th><th>Train Accuracy</th><th>Test Accuracy</th></tr></thead><tbody>
