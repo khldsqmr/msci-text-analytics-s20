@@ -10,7 +10,7 @@ Dropout layer randomly chooses some weights to drop them out. Thus, the neurons 
 <table>
 <thead><tr><th>Activation Function</th><th>Train Accuracy</th><th>Test Accuracy</th><th>Train Accuracy</th><th>Test Accuracy</th></tr></thead><tbody>
  <tr><td>&nbsp;</td><td>(With L2-Regularizer)</td><td>(With L2-Regularizer)</td><td>(Without L2-Regularizer)</td><td>(Without L2-Regularizer)</td></tr>
- <tr><td><th>ReLU</th></td><td>81.66%</td><td>80.71%</td><td>&nbsp;</td><td>&nbsp;</td></tr>
- <tr><td><th>Sigmoid</th></td><td>81.27%</td><td>80.74%</td><td>&nbsp;</td><td>&nbsp;</td></tr>
- <tr><td><th>Tanh</th></td><td>81.84%</td><td>80.54%</td><td>&nbsp;</td><td></td></tr>
+ <tr><td><b>ReLU</b></td><td>81.66%</td><td>80.71%</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td><b>Sigmoid</b></td><td>81.27%</td><td>80.74%</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td><b>Tanh</b></td><td>81.84%</td><td>80.54%</td><td>&nbsp;</td><td></td></tr>
 </tbody></table>
